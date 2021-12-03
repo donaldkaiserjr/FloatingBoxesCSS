@@ -1,51 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="myscript.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- https://cssarrowplease.com -->
-    <div class="container">
-      <div class="image">
-        <div>
-          <img
-            src="lorenzo-fatto-offidani-AtdV93HiBYg-unsplash.jpg"
-            alt="Man doing pull-up twists with rainbow colored shoes on."
-          />
-        </div>     
-      </div>
+body {
+    margin: 0;
+}
 
-      <div class="image">
-        <div>
-          <img
-            src="lorenzo-fatto-offidani-oZEkYLYxzKI-unsplash.jpg"
-            alt="Man doing pull-up twists with rainbow colored shoes on."
-          />
-        </div>
-      </div>
-      <div class="image">
-        <div>
-          <img
-            src="dollar-gill-QoW2Sdlh9Nk-unsplash.jpg"
-            alt="Man doing pull-up twists with rainbow colored shoes on."
-          />
-        </div>     
-      </div>
+.container {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color:#e7e7e7;  
+    animation: changer 25s infinite; 
+}
 
-      <div class="image">
-        <div>
-          <img
-            src="alexander-redl-d3bYmnZ0ank-unsplash.jpg"
-            alt="Man doing pull-up twists with rainbow colored shoes on."
-          />
-        </div>
-      </div>
-    </div>
-          
-  </body>
-</html>
+
+@keyframes changer {
+    0% {
+        background-color: #e7e7e7;
+    }
+    50% {
+        background-color: #9a5131;
+    }
+    100% {
+        background-color: #e7e7e7;
+    }
+}
+
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    height: 310px;
+    width: 310px;
+    padding: 50px;
+    text-align: center;
+    margin: 15px;
+    animation: pulse 3s ease infinite alternate,
+    nudge 10s linear infinite alternate;
+}
+
+.image img {
+    border-radius: 3%;
+    height: 350px;
+    width: 350px;
+    filter: brightness(120%);
+
+}
+
+@keyframes pulse { 
+    0%, 100% {
+        background-color: #6eb2cc;
+    }
+    50% {
+        background-color: #2f6a87;
+    }
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(-13%, 0);
+    }
+    50% {
+        transform: translate(13%, 0)
+    }
+}
+
+}
