@@ -20,36 +20,36 @@
 // const myArray = Object.keys(myBatch)
 // console.log(myArray)
 
-Date.prototype.nextDay = function () {
-    let currentDate = this.getDate()
-    return new Date(this.setDate(currentDate + 1))
-}
+// Date.prototype.nextDay = function () {
+//     let currentDate = this.getDate()
+//     return new Date(this.setDate(currentDate + 1))
+// }
 
-let date = new Date();
-console.log(date)
-console.log(date.nextDay())
-
-
-let david = {
-    name: 'David Nano',
-    total: 9500,
-    deductFee: function (fee) {
-        this.total = this.total - fee;
-        return this.name + ' remaining balance is ' + '$'+this.total
-    }
-}
+// let date = new Date();
+// console.log(date)
+// console.log(date.nextDay())
 
 
-const davidFee = david.deductFee(50)
-console.log(davidFee)
+// let david = {
+//     name: 'David Nano',
+//     total: 9500,
+//     deductFee: function (fee) {
+//         this.total = this.total - fee;
+//         return this.name + ' remaining balance is ' + '$'+this.total
+//     }
+// }
 
-let joseph = { name: 'joseph nathan', total: 99000 };
-let josephFee = david.deductFee.bind(joseph, 250)
 
-console.log(josephFee())
+// const davidFee = david.deductFee(50)
+// console.log(davidFee)
+
+// let joseph = { name: 'joseph nathan', total: 99000 };
+// let josephFee = david.deductFee.bind(joseph, 250)
+
+// console.log(josephFee())
 
 
-function getMax(arr) {
-    return Math.max.apply(null, arr)
-}
+// function getMax(arr) {
+//     return Math.max.apply(null, arr)
+// }
 
