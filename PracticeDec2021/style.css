@@ -3,15 +3,15 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color:#e7e7e7;
-    animation: changer 25s infinite;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color:#e7e7e7;  
+    animation: changer 25s infinite; 
 }
-
 
 @keyframes changer {
     0% {
@@ -66,25 +66,3 @@ body {
     }
 }
 
-.col-7 {
-    /* flex: 5; */
-    /* border: 3px solid red; */
-    height: 250px;
-    text-align: center;
-    margin: 15px;
-}
-
-
-
-
-.col-3 {
-    /* flex: 3; */
-    /* border: 3px solid blue; */
-    height: 250px;
-    text-align: center;
-    margin: 15px;
-}
-
-div ~ p {
-  background-color: yellow;
-}
