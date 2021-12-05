@@ -1,70 +1,114 @@
-body {
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscript.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- https://cssarrowplease.com -->
+    <div class="page">
+      <nav>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/jquery/">jQuery</a>
+      </nav>
 
-.container {
-    height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    background-color:#e7e7e7;  
-    animation: changer 25s infinite; 
-}
+      <article>
+        <header>
+          <h1>What Does WWF Do?</h1>
+          <p>WWF's mission:</p>
+          <p>
+          WWF's mission is to stop the degradation of our planet's natural
+          environment, and build a future in which humans live in harmony with
+          nature.
+        </p>
+        </header>
+        
+      </article>
 
+      <div class="container">
+        <div class="image">
+          <div>
+            <img
+              src="lorenzo-fatto-offidani-AtdV93HiBYg-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+          </div>
+        </div>
 
-@keyframes changer {
-    0% {
-        background-color: #e7e7e7;
-    }
-    50% {
-        background-color: #9a5131;
-    }
-    100% {
-        background-color: #e7e7e7;
-    }
-}
+        <div class="image">
+          <div>
+            <img
+              src="lorenzo-fatto-offidani-oZEkYLYxzKI-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="dollar-gill-QoW2Sdlh9Nk-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+          </div>
+        </div>
 
+        <div class="image">
+          <div>
+            <img
+              src="alexander-redl-d3bYmnZ0ank-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+          </div>
+        </div>
+      </div>
+      <section>
+        <h1>WWF</h1>
+        <p>
+          The World Wide Fund for Nature (WWF) is an international organization
+          working on issues regarding the conservation, research and restoration
+          of the environment, formerly named the World Wildlife Fund. WWF was
+          founded in 1961. Epcot is a theme park at Walt Disney World Resort.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          facere consectetur repellat illo assumenda totam in neque officiis est
+          minus similique laboriosam odit ea magnam incidunt, esse amet quidem
+          nulla!
+        </p>
+        <p>
+          The World Wide Fund for Nature (WWF) is an international organization
+          working on issues regarding the conservation, research and restoration
+          of the environment, formerly named the World Wildlife Fund. WWF was
+          founded in 1961. Epcot is a theme park at Walt Disney World Resort.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          facere consectetur repellat illo assumenda totam in neque officiis est
+          minus similique laboriosam odit ea magnam incidunt, esse amet quidem
+          nulla!
+        </p>
 
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
-    height: 310px;
-    width: 310px;
-    padding: 50px;
-    text-align: center;
-    margin: 15px;
-    animation: pulse 3s ease infinite alternate,
-    nudge 10s linear infinite alternate;
-}
+        <aside>
+          <h4>Epcot Center</h4>
+          <p>
+            Epcot is a theme park at Walt Disney World Resort featuring exciting
+            attractions, international pavilions, award-winning fireworks and
+            seasonal special events.
+          </p>
+        </aside>
+      </section>
 
-.image img {
-    border-radius: 3%;
-    height: 350px;
-    width: 350px;
-    filter: brightness(120%);
-
-}
-
-@keyframes pulse { 
-    0%, 100% {
-        background-color: #6eb2cc;
-    }
-    50% {
-        background-color: #2f6a87;
-    }
-}
-
-@keyframes nudge {
-    0%, 100% {
-        transform: translate(-13%, 0);
-    }
-    50% {
-        transform: translate(13%, 0)
-    }
-}
-
-}
+      <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>
+          The Panda has become the symbol of WWF. The well-known panda logo of
+          WWF originated from a panda named Chi Chi that was transferred from
+          the Beijing Zoo to the London Zoo in the same year of the
+          establishment of WWF.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
