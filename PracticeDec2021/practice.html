@@ -1,121 +1,168 @@
-body {
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscript.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- https://cssarrowplease.com -->
+    <div class="page">
+      <nav>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/jquery/">jQuery</a>
+      </nav>
 
-.page {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #e7e7e7;
-    /* border: 2px solid green; */
-}
+      <article>
+        <header>
+          <h1>What Does WWF Do?</h1>
+          <p>WWF's mission:</p>
+          <p>
+            WWF's mission is to stop the degradation of our planet's natural
+            environment, and build a future in which humans live in harmony with
+            nature.
+          </p>
+        </header>
+      </article>
 
-header {
-    margin-top: -30px;
-    margin-bottom: 20px;
-}
+      <div class="container">
+        <div class="image">
+          <figure>
+            <img
+              src="lorenzo-fatto-offidani-AtdV93HiBYg-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+            <figcaption>Pull-up Twists7.2 6 Sets of 15 reps</figcaption>
+          </figure>
+        </div>
 
-/* header h1, p {
-    text-align: center;
-} */
+        <div class="image">
+          <figure>
+            <img
+              src="lorenzo-fatto-offidani-oZEkYLYxzKI-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+            <figcaption>Squats.3.2 3 Sets of 12 reps</figcaption>
+          </figure>
+        </div>
+        <div class="image">
+          <figure>
+            <img
+              src="dollar-gill-QoW2Sdlh9Nk-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+            <figcaption>Biceps.1.27 3 Sets of 20 reps</figcaption>
+          </figure>
+        </div>
 
+        <div class="image">
+          <figure>
+            <img
+              src="alexander-redl-d3bYmnZ0ank-unsplash.jpg"
+              alt="Man doing pull-up twists with rainbow colored shoes on."
+            />
+            <figcaption>Sprint.1 - HIIT sprint for 30 minutes.</figcaption>
+          </figure>
+        </div>
+      </div>
 
+      <section>
+        <h1>WWF</h1>
+        <p>
+          The World Wide Fund for Nature (WWF) is an international organization
+          working on issues regarding the conservation, research and restoration
+          of the environment, formerly named the World Wildlife Fund. WWF was
+          founded in 1961. Epcot is a theme park at Walt Disney World Resort.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          facere consectetur repellat illo assumenda totam in neque officiis est
+          minus similique laboriosam odit ea magnam incidunt, esse amet quidem
+          nulla!
+        </p>
+        <p>
+          The World Wide Fund for Nature (WWF) is an international organization
+          working on issues regarding the conservation, research and restoration
+          of the environment, formerly named the World Wildlife Fund. WWF was
+          founded in 1961. Epcot is a theme park at Walt Disney World Resort.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          facere consectetur repellat illo assumenda totam in neque officiis est
+          minus similique laboriosam odit ea magnam incidunt, esse amet quidem
+          nulla!
+        </p>
 
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 50px;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 75px;
-    background-color: #2f6a87;
-    /* border: 2px solid salmon; */
-}
+        <aside>
+          <h4>Epcot Center</h4>
+          <p>
+            Epcot is a theme park at Walt Disney World Resort featuring exciting
+            attractions, international pavilions, award-winning fireworks and
+            seasonal special events.
+          </p>
+        </aside>
+      </section>
 
-nav a {
-    text-decoration: none;
-    color: #e7e7e7;
-    font-size: 1.6rem;
-}
+      <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>
+          The Panda has become the symbol of WWF. The well-known panda logo of
+          WWF originated from a panda named Chi Chi that was transferred from
+          the Beijing Zoo to the London Zoo in the same year of the
+          establishment of WWF. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta adipisci sapiente consectetur porro, rem tenetur nesciunt
+          maiores accusantium voluptatibus dolore, repellat quibusdam. Sapiente
+          esse aliquam doloremque enim, facere sunt dignissimos rem voluptas ea
+          asperiores at exercitationem nesciunt repellendus laudantium excepturi
+          eum natus voluptatibus quisquam? Necessitatibus molestias ad ullam
+          perspiciatis eveniet, ex debitis cupiditate culpa quaerat autem at quo
+          minima optio! Eos et nobis molestias nemo, fuga eveniet neque pariatur
+          minima voluptatem esse suscipit est, quod molestiae qui? Veritatis
+          ullam corporis corrupti voluptate voluptatibus magni tempore, odit
+          iste accusamus magnam, atque vel nostrum harum in tenetur molestiae
+          quidem nulla nam hic?
+        </p>
 
-
-.container {
-    margin-top: 50px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color:#e7e7e7;  
-    animation: changer 25s infinite; 
-}
-
-
-@keyframes changer {
-    0% {
-        background-color: #e7e7e7;
-    }
-    50% {
-        background-color: #9a5131;
-    }
-    100% {
-        background-color: #e7e7e7;
-    }
-}
-
-
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
-    height: 310px;
-    width: 310px;
-    padding: 50px;
-    text-align: center;
-    margin: 15px;
-    animation: pulse 3s ease infinite alternate,
-    nudge 10s linear infinite alternate;
-}
-
-.image img {
-    border-radius: 3%;
-    height: 350px;
-    width: 350px;
-    filter: brightness(120%);
-
-}
-
-@keyframes pulse { 
-    0%, 100% {
-        background-color: #6eb2cc;
-    }
-    50% {
-        background-color: #2f6a87;
-    }
-}
-
-@keyframes nudge {
-    0%, 100% {
-        transform: translate(-13%, 0);
-    }
-    50% {
-        transform: translate(13%, 0)
-    }
-}
-
-aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: #788388;
-    color: #e7e7e7;
-    font-weight: 400;
-}
+        <p>
+          The Panda has become the symbol of WWF. The well-known panda logo of
+          WWF originated from a panda named Chi Chi that was transferred from
+          the Beijing Zoo to the London Zoo in the same year of the
+          establishment of WWF. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta adipisci sapiente consectetur porro, rem tenetur nesciunt
+          maiores accusantium voluptatibus dolore, repellat quibusdam. Sapiente
+          esse aliquam doloremque enim, facere sunt dignissimos rem voluptas ea
+          asperiores at exercitationem nesciunt repellendus laudantium excepturi
+          eum natus voluptatibus quisquam? Necessitatibus molestias ad ullam
+          perspiciatis eveniet, ex debitis cupiditate culpa quaerat autem at quo
+          minima optio! Eos et nobis molestias nemo, fuga eveniet neque pariatur
+          minima voluptatem esse suscipit est, quod molestiae qui? Veritatis
+          ullam corporis corrupti voluptate voluptatibus magni tempore, odit
+          iste accusamus magnam, atque vel nostrum harum in tenetur molestiae
+          quidem nulla nam hic?
+        </p>
+        <p>
+          The Panda has become the symbol of WWF. The well-known panda logo of
+          WWF originated from a panda named Chi Chi that was transferred from
+          the Beijing Zoo to the London Zoo in the same year of the
+          establishment of WWF. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta adipisci sapiente consectetur porro, rem tenetur nesciunt
+          maiores accusantium voluptatibus dolore, repellat quibusdam. Sapiente
+          esse aliquam doloremque enim, facere sunt dignissimos rem voluptas ea
+          asperiores at exercitationem nesciunt repellendus laudantium excepturi
+          eum natus voluptatibus quisquam? Necessitatibus molestias ad ullam
+          perspiciatis eveniet, ex debitis cupiditate culpa quaerat autem at quo
+          minima optio! Eos et nobis molestias nemo, fuga eveniet neque pariatur
+          minima voluptatem esse suscipit est, quod molestiae qui? Veritatis
+          ullam corporis corrupti voluptate voluptatibus magni tempore, odit
+          iste accusamus magnam, atque vel nostrum harum in tenetur molestiae
+          quidem nulla nam hic?
+        </p>
+        
+      </section>
+    </div>
+  </body>
+</html>
