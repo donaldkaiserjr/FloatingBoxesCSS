@@ -1,6 +1,5 @@
 'use strict'
 
-
 // function batches(recipe, available) {
 //     Math.floor(
 //         Math.min(...Object.keys(recipe).map(k => available[k] / recipe[k] || 0))
